@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>링크와 이미지 태그</title>
+  </head>
+  <body>
+    <h1>하이퍼링크 태그 : a</h1>
+    <p>
+      <a href="https://www.google.com">구글 웹 사이트로 이동</a>
+      <!-- 해당 탭에서 바로 열림 -->
+    </p>
+    <p>
+      <a href="https://www.naver.com" target="_blank"
+        >네이버를 새 탭에서 열기</a
+      >
+      <!-- 주소 뒤에 띄우고 target 태그를 사용하면 새 탭에서 열림! -->
+    </p>
+    <p>
+      <a href="#section_bottom">페이지 하단으로 이동</a>
+      <!-- #은 id section_bottom 인 곳으로 이동하라는 뜻 -->
+    </p>
+
+    <hr />
+
+    <h1>이미지 태그 : img</h1>
+    <img
+      src="https://i.namu.wiki/i/y1Qupbxh_V56gjJM8Mg14eP1GoOFCojUIW_A1EzJfD2W9PPSoSiFB37tR2Juvr5YeOChoRtNUU9-Cu-NerSzfA.webp"
+      width="200"
+      height="300"
+      alt="이재용 반측면"
+    />
+    <!-- 열리면서 동시에 닫히는 태그 -->
+    <!-- src 에 이미지 주소를 넣으면 이미지가 가져와짐. -->
+    <!-- alt 는 시각 장애를 가진 사람을 위해 웹 페이지에 담긴 정보를 보이스로 읽어주게 됨. (이미지) -->
+    <img src="no_image.png" alt="이미지 로드 실패" />
+    <!-- 이미지 대신 가져올 수 있음 -->
+    <!-- width 가로, height 세로 / 값은 픽셀! -->
+    <!-- 반응형 웹 페이지는 크기가 줄어들면 보기 편하게 변하고, 커지면 원상태로 돌아오는 것 -->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <p id="section_bottom">여기는 페이지의 가장 하단입니다.</p>
+    <!-- p 태그에 해당하는 고유한 아이디를 부여한 것 -->
+  </body>
+</html>
