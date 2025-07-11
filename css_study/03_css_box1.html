@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 1000px;
+        height: 300px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        /* border 을 쓰면 box-sizing 을 같이 써야 함. 세트라 생각하기 */
+        background-color: cornflowerblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* display flex 와 justify-content, align-items 는 자주 쓰이며 한 세트로 봐도 좋다. 중요한 부분!! 
+        space-around 는 균일하게 거리를 두고 중간에 배치되는 것, between 은 양쪽에 균일하게 붙는 것.*/
+      }
+
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: coral;
+        border: 1px solid black;
+        box-sizing: border-box;
+        /* 세로로 쌓이는 형태인데 부모에 display: flex 를 넣어줘야 가로 형태가 됨 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

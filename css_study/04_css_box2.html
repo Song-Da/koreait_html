@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 300px;
+        height: 1000px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        background-color: darksalmon;
+        display: flex;
+        flex-direction: column;
+        /* flex-direction column 은 세로로 배치. row 는 가로로. 주의해야 할 점은 justify 와 align 이 반대가 됨! */
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .box {
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        background-color: deeppink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
