@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 적용 방식</title>
+    <style>
+      p {
+        color: hotpink;
+        font-size: 28px;
+        border: 2px solid black;
+        border-radius: 15px !important;
+        /* !important 는 가까운 설정이 있어도 얘가 무조건 제일 우선 순위가 됨!! 제일 중요함 */
+      }
+      /* 여기서 쓰는 스타일들은 다 자주 쓰는 거라 기억해두기. */
+    </style>
+  </head>
+  <body>
+    <h1>인라인 스타일과 내부 스타일</h1>
+    <hr />
+    <p
+      style="
+        color: blue;
+        font-weight: 900;
+        border: 1px solid black;
+        border-radius: 40px;
+        padding: 20px;
+      "
+    >
+      <!-- padding 안쪽 여백, margin 바깥쪽 여백 -->
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et sit
+      recusandae eius facere quibusdam soluta dolore, sed amet optio incidunt
+      deserunt est! Ipsum distinctio alias eveniet soluta, tempore consequatur
+      laboriosam?
+    </p>
+
+    <hr />
+
+    <p id="text1">
+      <!-- id 를 주면 바깥쪽 헤더 부분에서 따로 스타일을 지정할 수 있음. 하지만 p 태그로 준다면 인라인 적용 방식으로 변함 -->
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sequi
+      illum tenetur recusandae distinctio quasi esse aliquam, minima
+      praesentium? Voluptates, assumenda. Dicta hic distinctio illum. Corporis
+      deserunt qui labore beatae!
+    </p>
+    <!-- 우선 순위 - 인라인, 내부, 외부 순 -->
+    <strong>더 가까운게 적용 우선 순위가 높다</strong>
+  </body>
+</html>
